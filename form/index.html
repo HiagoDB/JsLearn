@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    
+    <form id="form" action="/" method="post" class="formImc">
+
+      <fieldset>
+
+      <legend>BMI Calculator</legend>
+
+      <div>
+        <label for="Height">Height</label>
+        <input placeholder="Type your Height in m here (ex:1.80)" type="text" name="userHeight" id="Height" required>
+      </div>
+
+      <div>
+        <label for="Weight">Weight</label>
+        
+        <input placeholder="Type your Weight in kg here (ex:70)" type="text" name="userWeight" id="Weight" required>
+      </div>
+
+      <button class="formButton" type="submit">Rate</button>
+
+      <div id="result" class="imcResult">
+      </div>
+
+      </fieldset>
+
+    </form>
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>
