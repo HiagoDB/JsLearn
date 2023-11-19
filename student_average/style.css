@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  border: none;
+  box-shadow: 0 0 10px #3498db;
+  border-radius: 10px;
+}
+
+legend {
+  text-align: center;
+  padding-top: 4em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.division {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cbeaff;
+  padding: 1.3em;
+  width: 21em;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-row label {
+  width: 80px; /* Ajuste conforme necessário */
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none; 
+  border-radius: 2px;
+}
+
+.input-wrapper input:focus {
+  border-bottom: 2px solid #3498db;
+}
+
+.avgButton {
+  margin-top: 15px; /* Ajuste conforme necessário */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #3e3e3e;
+  box-shadow: 0 0 10px #5fa1cc;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.avgButton:hover {
+  box-shadow: 0 0 10px #168ad7;
+  transform: scale(1.03);
+  color: #1a1a1a;
+}
+
+.p-greater, .p-smaller{
+  margin-top: 8px;
+  text-align: center;
+  background-color: rgb(0, 255, 128);
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+}
+.p-smaller{
+  background-color: rgb(228, 83, 83);
+}

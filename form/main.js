@@ -18,7 +18,6 @@ form.addEventListener('submit', function (e) {
   const BMI = getBMI(height, weight)
   const indexBMI = getIndexBMI(BMI)
 
-  console.log(BMI, indexBMI)
   const msg = `Your BMI ${BMI}, ${indexBMI}`
   setResultado(msg, true)
 
@@ -61,7 +60,6 @@ function setResultado(msg, isValid) {
   const resultado = document.querySelector('#result')
   resultado.innerHTML = ''
 
-  
   const p = createP()
   isValid ? p.classList.add('p-result'):p.classList.add('p-notValid')
   p.innerHTML = msg

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Average Grades</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div>
+    <section>
+      <div class="division">
+        <form id="averageForm" action="/" method="post" class="AvForm">
+  
+          <fieldset>
+            <legend>Student Average</legend>
+    
+            <div class="input-row">
+              <label for="itest1">Test 1:</label>
+              <div class="input-wrapper">
+                <input required type="text" name="test1" id="itest1" oninput="formatNumber(this)">
+              </div>
+            </div>
+
+            <div class="input-row">
+              <label for="itest2">Test 2:</label>
+              <div class="input-wrapper">
+                <input required type="text" name="test2" id="itest2" oninput="formatNumber(this)">
+              </div>
+            </div>
+
+            <div class="input-row">
+              <label for="itest3">Test 3:</label>
+              <div class="input-wrapper">
+                <input required type="text" name="test3" id="itest3" oninput="formatNumber(this)">
+              </div>
+            </div>
+
+            <div id="avgResult">
+              
+            </div>
+
+            <button class="avgButton" type="submit">Average</button>
+          </fieldset>
+    
+        </form>
+      </div>     
+    </section>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
