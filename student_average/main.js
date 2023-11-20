@@ -12,7 +12,7 @@ form.addEventListener('submit', function (e) {
   let test3 = parseFloat(testInput3.value.replace(',', '.'));
 
   if (isNaN(test1) || isNaN(test2) || isNaN(test3)) {
-    setResultado('Por favor, insira valores numéricos válidos para os testes.', false);
+    setResultado('Please, type valid numeric values for the tests.', false);
     return;
   }
 
@@ -25,7 +25,7 @@ THIS PART ABOUT APPEARING AT THE MAXIMUM VALUE 10 I WASN'T THE ONE WHO DID, BECA
 
   const studentAverage = averageTest(test1, test2, test3);
 
-  studentAverage < 7 ? avgResult(`Reprovado, Média: ${studentAverage}`, false) : avgResult(`Failed, average: ${studentAverage}`, true);
+  studentAverage < 7 ? avgResult(`Failed, average: ${studentAverage}`, false) : avgResult(`Approved, average: ${studentAverage}`, true);
 });
 
 function averageTest(test1, test2, test3) {
