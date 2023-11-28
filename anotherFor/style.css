@@ -1,0 +1,25 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: rgb(152, 209, 105);
+  font-size: 18px;
+}
+
+.paragraph{
+  height: 400px;
+  width: 600px;
+  margin: 60px auto;
+  padding-top: 30px;
+  display: flex;
+  background-color: aquamarine;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 30px;
+  box-shadow: 6px 5px 17px 2px rgb(47, 208, 223);
+}
